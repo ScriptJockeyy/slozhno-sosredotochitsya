@@ -1,5 +1,56 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: "IBM Plex mono", "Courier New", Courier, monospace;
+  background-color: var(--background-color);
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .page {
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 30px auto 40px auto 25px auto 20px;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "."
+    "menu"
+    "."
+    "title"
+    "."
+    "text"
+    ".";
+}
+
+.header__title {
+  color: var(--title-color);
+  filter: drop-shadow(4px 4px 0px var(--accent-color));
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 0.825em;
+  grid-area: title;
+}
+
+.header__theme-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  grid-area: menu;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--text-color);
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+}
+
+.header__text {
+  grid-area: text;
 }
