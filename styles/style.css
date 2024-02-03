@@ -2,18 +2,20 @@
 
 .page {
   font-family: "IBM Plex mono", "Courier New", Courier, monospace;
-  background-color: var(--background-color);
+  background-color: var(
+    --background-color
+  ); /* ! фон должен быть картинкой которая тянется за скролом*/
+  background-position: center;
   font-size: 18px;
+  padding: 10px;
+  color: var(--text-color);
 }
 
-@media (min-width: 768px) {
-  .page {
-  }
-}
+/* Header start */
 
 .header {
   display: grid;
-  grid-template-rows: 30px auto 40px auto 25px auto 20px;
+  grid-template-rows: 65px auto 65px auto 55px auto 56px;
   grid-template-columns: auto;
   grid-template-areas:
     "."
@@ -23,6 +25,32 @@
     "."
     "text"
     ".";
+  position: relative;
+  background-image: url(/images/cover-image-light.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.decorated-zone::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--text-color);
+  border-top: 1px solid var(--text-color);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.decorated-zone::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .header__title {
@@ -39,10 +67,20 @@
   flex-direction: column;
   align-items: end;
   grid-area: menu;
+  height: 98px; /*! фиксированная высота*/
+}
+
+.header__theme-menu :not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.header__theme-menu-item {
+  text-align: center;
 }
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--text-color);
+  padding: 0px 13px 0px 13px;
 }
 
 .header__theme-menu-button {
@@ -52,5 +90,74 @@
 }
 
 .header__text {
+  /*! Меняется положение при форматированнии*/
   grid-area: text;
+  width: auto;
+  font-weight: 700;
+  white-space: pre-line; /*! при размере для планшета должен сохранить пропорции и не перескакивать*/
 }
+
+.accent-text {
+  background-color: var(--accent-color);
+}
+
+.header__theme-menu-button {
+  height: 23px; /*! фиксированная высота кнопки*/
+}
+
+/* Header End  */
+
+/* Main start  */
+
+.main-content {
+  line-height: 23.4px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.main-content__title {
+  margin: 50px 0 20px 0;
+  font-size: 18px;
+}
+
+
+.main-content__title:last-child {
+  margin: 50px 0 10px 0;
+}
+
+.main-content__subtitle {
+  margin: 20px 0 10px 0;
+}
+
+.main-content__galery {
+  display: grid; 
+  gap: 10px; 
+}
+
+.main-content__galery-item {
+  width: 100%;
+}
+
+/* Main end  */
+
+.footer {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 647px; /*!возможная альтернатива*/
+  margin-top: 50px;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  color: var(--title-color);
+  filter: drop-shadow(2px 2px 0px var(--accent-color));
+   
+}
+
+/* ! адаптация под остальные размеры */
+/* ! title в header на больших размерах */
+
+

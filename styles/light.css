@@ -3,10 +3,32 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme_light {
+    --accent-color: #ff8dcb;
+    --background-color: #fff1f7;
+    --text-color: #353430;
+    --title-color: #ffc2e6;
+}
 
 .page.theme_light {
+  --accent-color: #ff8dcb;
+  --background-color: #fff1f7;
+  --text-color: #353430;
+  --title-color: #ffc2e6;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+@media (prefers-color-scheme: light) {
+  body {
+    --accent-color: #ff8dcb;
+    --background-color: #fff1f7;
+    --text-color: #353430;
+    --title-color: #ffc2e6;
+  }
+}
+
+
+ 
