@@ -16,6 +16,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <div class="rec" aria-hidden="true">REC</div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -43,14 +44,15 @@
         </ul>
       </nav>
       <h1 class="header__title">no focus</h1>
-      <div class="header__text accent-text">Что делать, когда не можешь делать ничего 
-        Или почему нам так сложно cконцентрироваться, особенно когда очень надо
+      <div class="header__text accent-text">
+        Что делать, когда не можешь делать ничего <br>Или почему нам так сложно
+        cконцентрироваться, особенно когда очень надо
       </div>
     </header>
     <main class="main-content">
       <div class="main-content__container">
-        <h3 class="main-content__title">Почему сосредоточиться так сложно</h3>
-        <h4 class="accent-text main-content__subtitle">Многозадачность</h4>
+        <section class="main-content__column-section content-section"><h3 class="main-content__title">Почему сосредоточиться так сложно</h3>
+          <div class="main-content__first-text"><h4 class="accent-text main-content__subtitle">Многозадачность</h4>
         <p>
           Особенно сложно сосредоточиться, когда задач много и все они — важные.
           Где же легендарная многозадачность, когда она так нужна вам (и всем
@@ -71,9 +73,9 @@
           время и выделяется дофамин — и мы чувствуем удовольствие. Получается
           замкнутый круг: чем больше отвлекаешься, тем больше удовольствия
           получаешь.
-        </p>
-        <h3 class="main-content__title">Что снижает концентрацию внимания?</h3>
-        <h4 class="accent-text main-content__subtitle">Многозадачность</h4>
+        </p></div></section>
+        <section class="main-content__row-section content-section"><div class="main-content__second-title"><h3 class="main-content__title">Что снижает концентрацию внимания?</h3></div>
+        <div class="main-content__second-text"><h4 class="accent-text main-content__subtitle">Многозадачность</h4>
         <p>
           Как концентрация может снижаться из-за… концентрации? Любая стрессовая
           ситуация (и резко меняющийся мир в целом) заставляет наш мозг
@@ -100,12 +102,12 @@
           концентрации, человеку в среднем нужно 20 минут. Вот и получается, что
           чем больше времени мы проводим в гаджетах, тем больше времени затем
           нужно, чтобы вернуться к работе.
-        </p>
-        <h3 class="main-content__title">
+        </p></div></section>
+        <section class="main-content__column-section content-section"><h3 class="main-content__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h3>
-        <h4 class="accent-text main-content__subtitle">
+        <div class="main-content__third-text"><h4 class="accent-text main-content__subtitle">
           5 простых (на самом деле не очень) советов
         </h4>
         <p class="accent-text main-content__subtitle">
@@ -150,34 +152,44 @@
           прочитать пост в соцсети, достаточно нескольких минут или даже секунд.
           А вот интересная книга способна затянуть и на несколько часов и круто
           тренирует направленное внимание.
-        </p>
-        <h3 class="main-content__title accent-text">А можно в картинках?</h3>
-      </div>
+        </p></div></section></div>
+        <section class="main-content__fourth-title last-content-section"><h3 class="main-content__title accent-text">А можно в картинках?</h3></section>
+      
       <div class="main-content__galery">
         <img
           src="/images/sunset.png"
+          loading="lazy"
           alt="закат среди гор"
           class="main-content__galery-item"
+          id="sunset"
         />
         <img
           src="/images/ice-cream.png"
+          loading="lazy"
           alt="Концептуальное изображение с аудиокассетой и элементами графического интерфейса на фоне облаков и геометрических фигур"
           class="main-content__galery-item"
+          id="icecream"
         />
         <img
           src="/images/tape.png"
+          loading="lazy"
           alt="Иллюстрация с ретро кассетой и абстрактными элементами интерфейса компьютера на фоне с градиентом от розового к фиолетовому, окружённая цветами и облаками."
           class="main-content__galery-item"
+          id="tape"
         />
         <img
           src="/images/books.png"
+          loading="lazy"
           alt="Стопка книг с чашкой кофе на верху, с надписью 'Читай больше' на боку чашки."
           class="main-content__galery-item"
+          id="books"
         />
         <img
           src="/images/street.png"
+          loading="lazy"
           alt="Изображение пустой улицы в стилизованном городе с зданиями в розово-фиолетовых тонах"
           class="main-content__galery-item"
+          id="street"
         />
       </div>
     </main>
