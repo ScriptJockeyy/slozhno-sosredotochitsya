@@ -5,6 +5,7 @@
 
 :root {
   --accent-color: #ff8dcb;
+  --accent-color-title: #FF0070;
   --background-color: #fff1f7;
   --text-color: #353430;
   --title-color: #ffc2e6;
@@ -12,32 +13,3 @@
   --background-url: url(/images/cover-image-light.png);
 }
 
-@media (min-width: 375px) {
-  :root {
-  --title-text-size: 116px;
-  }
-
-  .header__title {
-    font-size: var(--title-text-size);
-  }
-}
-
-@media (min-width: 768px) {
-  :root {
-  --title-text-size: 120px;
-  }
-
-  .header__title {
-    font-size: var(--title-text-size);
-  }
-}
-
-@media (min-width: 1024px) {
-  :root {
-  --title-text-size: 157px;
-  }
-
-  .header__title {
-    font-size: var(--title-text-size);
-  }
-}
