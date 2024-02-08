@@ -23,7 +23,7 @@
     "text";
   position: relative;
   height: 100vh;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .rec {
@@ -283,10 +283,6 @@
     gap: 20px;
   }
 
-  .main-content__fourth-title {
-
-  }
-
   /* footer  */
 
 
@@ -446,7 +442,7 @@
 
   .main-content__column-section {
     display: grid;
-    grid-template-columns: 1fr 2fr; /*!размер ячейки*/
+    grid-template-columns: 315px 2fr; 
     gap: 20px;
   }
 
