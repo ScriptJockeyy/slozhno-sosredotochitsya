@@ -4,8 +4,6 @@
   font-family: "IBM Plex mono", "Courier New", Courier, monospace;
   background-color: var(--background-color);
   font-size: 18px;
-  /* ! */
-  /* padding: 10px; */
   color: var(--text-color);
   background-image: var(--background-url);
   background-size: cover;
@@ -24,7 +22,6 @@
     "title"
     "text";
   position: relative;
-  /* ! */
   height: 100vh;
   padding: 10px; 
 }
@@ -286,6 +283,10 @@
     gap: 20px;
   }
 
+  .main-content__fourth-title {
+
+  }
+
   /* footer  */
 
 
@@ -338,6 +339,10 @@
   }
 
   .content-section {
+    margin-block-start: 80px;
+  }
+
+  .last-content-section {
     margin-block-start: 80px;
   }
 
