@@ -23,7 +23,7 @@
     "title"
     "text";
   position: relative;
-  min-height: calc(100vh - 20px);
+  height: calc(100vh - 20px);
 }
 
 .rec {
@@ -80,6 +80,7 @@
 
 .header__theme-menu {
   display: grid;
+/* box-sizing: border-box; */
 }
 
 .header__theme-menu-list {
@@ -111,7 +112,6 @@
 
 .header__text {
   grid-area: text;
-  width: min-content;
   font-weight: 700;
   width: 100%;
   height: min-content;
@@ -181,7 +181,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(668px - 10px * 2);
+  height: calc(100vh - 10px * 2);
   margin-block-start: 50px;
 }
 
@@ -209,7 +209,7 @@
       "title"
       "text";
     position: relative;
-    min-height: calc(100vh - 40px);
+    height: calc(100vh - 40px);
   }
 
   .header__text {
@@ -304,7 +304,7 @@
   /* footer  */
 
   .footer {
-    min-height: calc(100vh - 20px * 2);
+    height: calc(100vh - 20px * 2);
     margin-block-start: 80px;
   }
 
@@ -328,7 +328,7 @@
       "title"
       "text";
     position: relative;
-    min-height: calc(100vh - 40px);
+    height: calc(100vh - 40px);
   }
 
   .header__title {
