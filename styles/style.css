@@ -442,7 +442,7 @@
 
   .main-content__column-section {
     display: grid;
-    grid-template-columns: 315px 2fr; 
+    grid-template-columns: 315px 2fr;
     gap: 20px;
   }
 
