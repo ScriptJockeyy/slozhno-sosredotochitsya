@@ -21,8 +21,7 @@
   grid-template-areas:
     "menu"
     "title"
-    "text"
-   ;
+    "text";
   position: relative;
   min-height: calc(100vh - 20px);
 }
@@ -80,20 +79,19 @@
 }
 
 .header__theme-menu {
-display: grid;
+  display: grid;
 }
 
 .header__theme-menu-list {
   display: grid;
-align-self: center;
-justify-self: end;
-gap: 10px;
-
+  align-self: center;
+  justify-self: end;
+  gap: 10px;
 }
 
 .header__theme-menu-item {
-width: 70px;
-height: 26px;
+  width: 70px;
+  height: 26px;
 }
 
 .header__theme-menu-button_active {
@@ -107,6 +105,8 @@ height: 26px;
   border: none;
   justify-self: center;
   align-self: center;
+  height: 26px;
+  width: 70px;
 }
 
 .header__text {
@@ -120,11 +120,7 @@ height: 26px;
 
 .accent-text {
   background-color: var(--accent-color);
-}
-
-.header__theme-menu-button {
-  height: 26px;
-  width: 70px;
+  font-size: 18px;
 }
 
 .title-decor {
@@ -202,7 +198,7 @@ height: 26px;
   }
 
   /* header  */
- 
+
   /* !выравнивание элементов в шапке и футере */
   .header {
     display: grid;
@@ -283,6 +279,8 @@ height: 26px;
 
   .main-content__second-title {
     width: min-content;
+    margin-block-end: 20px;
+
   }
 
   .main-content__second-text {
@@ -297,10 +295,6 @@ height: 26px;
   .main-content__container h4:first-child,
   .main-content__container h4:last-child {
     margin-block-start: 0;
-  }
-
-  .main-content__second-title {
-    margin-block-end: 20px;
   }
 
   .last-content-section {
@@ -358,10 +352,8 @@ height: 26px;
   .header__text {
     max-width: 491px;
     justify-self: end;
-    align-self:center;
+    align-self: center;
   }
-
-  
 
   .footer {
     display: flex;
