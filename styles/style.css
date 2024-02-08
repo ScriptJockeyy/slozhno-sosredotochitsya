@@ -52,8 +52,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-right: 1px solid var(--text-color);
-  border-top: 1px solid var(--text-color);
+  border-right: 1px solid var(--accent-menu-color);
+  border-top: 1px solid var(--accent-menu-color);
   position: absolute;
   right: 0px;
   top: 0px;
@@ -63,8 +63,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--text-color);
-  border-bottom: 1px solid var(--text-color);
+  border-left: 1px solid var(--accent-menu-color);
+  border-bottom: 1px solid var(--accent-menu-color);
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -97,13 +97,13 @@ height: 26px;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--text-color);
+  outline: 1px solid var(--accent-menu-color);
   padding: 0px 13px 0px 13px;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--accent-menu-color);
   border: none;
   justify-self: center;
   align-self: center;
@@ -127,6 +127,10 @@ height: 26px;
   width: 70px;
 }
 
+.title-decor {
+  color: var(--title-decor);
+}
+
 /* Header End  */
 
 /* Main start  */
@@ -143,6 +147,7 @@ height: 26px;
 
 .main-content__title {
   font-size: 18px;
+  color: var(--accent-main-color);
 }
 
 .content-section {
@@ -356,27 +361,7 @@ height: 26px;
     align-self:center;
   }
 
-  .decorated-zone::before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-right: 1px solid var(--text-color);
-    border-top: 1px solid var(--text-color);
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-
-  .decorated-zone::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-left: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-  }
+  
 
   .footer {
     display: flex;

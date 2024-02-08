@@ -9,6 +9,8 @@
     --text-color: #353430;
     --title-color: #ffc2e6;
     --background-url: url(/images/cover-image-light.png);
+    --accent-menu-color: #353430;
+    --accent-main-color: #353430;
 }
 
 .page.theme_light {
@@ -17,6 +19,11 @@
   --text-color: #353430;
   --title-color: #ffc2e6;
   --background-url: url(/images/cover-image-light.png);
+  --accent-menu-color: #353430;
+  --accent-main-color: #353430;
+
+}
+
   .rec {
     display: none;
   }
@@ -24,11 +31,8 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-}
 
-/* .page.theme_light .rec {
-  display: none;
-} */
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -37,6 +41,9 @@
     --text-color: #353430;
     --title-color: #ffc2e6;
     --background-url: url(/images/cover-image-light.png);
+    --accent-menu-color: #353430;
+    --accent-main-color: #353430;
+
   }
 
   .rec {
