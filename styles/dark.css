@@ -3,29 +3,22 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme_dark {
+:root.theme_dark, .page.theme_dark {
   --accent-color: #FF0070;
   --background-color: #000028;
   --text-color: #F1B2CE;
   --title-color: #DB00FF;
-  --background-url: url(/images/cover-image-dark.png);
+  --background-url: url(../images/cover-image-dark.png);
   --title-decor: #000028;
   --accent-menu-color: #ff0070;
   --accent-main-color: #ff0070;
+  --accent-button-color: #ff0070;
 
 }
 
-.page.theme_dark {
-  --accent-color: #FF0070;
-  --background-color: #000028;
-  --text-color: #F1B2CE;
-  --title-color: #DB00FF;
-  --background-url: url(/images/cover-image-dark.png);
-  --title-decor: #000028;
-  --accent-menu-color: #ff0070;
-  --accent-main-color: #ff0070;
+.page.theme_dark .rec {
+  display: initial;
 }
-
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -38,9 +31,11 @@
     --background-color: #000028;
     --text-color: #F1B2CE;
     --title-color: #DB00FF;
-    --background-url: url(/images/cover-image-dark.png);
+    --background-url: url(../images/cover-image-dark.png);
     --title-decor: #000028;
     --accent-menu-color: #ff0070;
     --accent-main-color: #ff0070;
+  --accent-button-color: #ff0070;
+
   }
 }

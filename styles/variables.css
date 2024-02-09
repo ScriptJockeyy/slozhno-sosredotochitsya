@@ -10,10 +10,16 @@
   --text-color: #353430;
   --title-color: #ffc2e6;
   --title-text-size: 116px;
-  --background-url: url(/images/cover-image-light.png);
+  --background-url: url(../images/cover-image-light.png);
   --accent-menu-color: #353430;
   --title-decor: #353430;
   --accent-main-color: #353430;
-
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --accent-button-color: rgba(50, 49, 45, 0.4);
 }
 
+@media (width >= 768px) {
+  :root {
+  --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+}
+}
