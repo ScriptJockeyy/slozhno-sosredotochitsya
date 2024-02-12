@@ -12,8 +12,7 @@
   --title-decor: #000028;
   --accent-menu-color: #ff0070;
   --accent-main-color: #ff0070;
-  --accent-button-color: #ff0070;
-
+  --accent-button-color: rgba(255, 0, 112, 0.4);
 }
 
 .page.theme_dark .rec {
@@ -35,7 +34,6 @@
     --title-decor: #000028;
     --accent-menu-color: #ff0070;
     --accent-main-color: #ff0070;
-  --accent-button-color: #ff0070;
-
+    --accent-button-color: rgba(255, 0, 112, 0.4);
   }
 }
